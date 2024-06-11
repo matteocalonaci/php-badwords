@@ -9,6 +9,8 @@
     <form action="elabora.php">
         <input type="text"placeholder="Scrivi il tuo nome" name="nome">
         <input type="text"placeholder="Scrivi il tuo cognome" name="cognome">
+        <input type="text"placeholder="Scrivi il tuo insulto" name="insulto">
+
         <button type="submit">INVIA</button>
     </form>
     

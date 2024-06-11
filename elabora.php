@@ -1,7 +1,10 @@
 <?php
 $nome = $_GET["nome"];
 $cognome = $_GET["cognome"];
-$nomeCognome = $nome . $cognome
+$nomeCognome = $nome . $cognome;
+$insulto = $_GET["insulto"];
+$beep = str_replace("$insulto","***","***");
+
 ?>
 
 <!DOCTYPE html>
@@ -16,5 +19,7 @@ $nomeCognome = $nome . $cognome
     <h2><?php echo $nome . $cognome ?></h2>
     <h3>Di quante lettere è composto il tuo cognome? <?php echo strlen("$cognome"); ?></h3>
     <h3>Di quante lettere è composto nome + cognome? <?php echo strlen("$nomeCognome"); ?></h3>
+    <h3>Il mio insulto è: <?php echo $insulto ?></h3>
+    <h3>Il mio insulto censureto è: <?php echo $beep ?></h3>
 </body>
 </html>
