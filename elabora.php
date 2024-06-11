@@ -1,8 +1,8 @@
 <?php
-$nome = $_GET["nome"];
-$cognome = $_GET["cognome"];
+$nome = $_GET["nome"] ?? "Utente";
+$cognome = $_GET["cognome"] ?? "Anonimo";
 $nomeCognome = $nome . $cognome;
-$insulto = $_GET["insulto"];
+$insulto = $_GET["insulto"] ?? "insulto assente";
 $beep = str_replace("$insulto","***","***");
 
 ?>
